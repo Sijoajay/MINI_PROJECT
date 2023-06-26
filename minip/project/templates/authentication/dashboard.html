@@ -1,0 +1,241 @@
+{% load static %}
+<!DOCTYPE html>
+<!--=== Coding by CodingLab | www.codinglabweb.com === -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Faculty Dashboard</title> 
+   
+</head>
+<body>
+    
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="D:\MINI PROJECT\html design\test\Admin Dashboard Panel\Images\logoo.jpg" alt="">
+            </div>
+
+            <span class="logo_name">QuesGen</span>
+        </div>
+
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="#">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Home</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">Profile</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-chart"></i>
+                    <span class="link-name">Abcd</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Lijk</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-comments"></i>
+                    <span class="link-name">halo</span>
+                </a></li>
+                <li><a href="#">
+                    <i class="uil uil-share"></i>
+                    <span class="link-name">Share</span>
+                </a></li>
+            </ul>
+            
+            <ul class="logout-mode">
+                <li><a href="D:\MINI PROJECT\html design\PROJECT\module1\profile.html">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+
+
+            
+        </div>
+    </nav>
+
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+            <a href="#" class="profile-button">
+                <img src="D:\MINI PROJECT\html design\test\Admin Dashboard Panel\Images\profile.png" alt="">
+            </a>
+            
+             <div class="dropdown">
+                <button class="profile-button"> 
+                 <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                   <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+               </div>
+             </div> 
+            </div>
+        </div>
+
+        <div class="dash-content">
+            <div class="overview">
+                <div class="title">
+                    <i class="uil uil-tachometer-fast-alt"></i>
+                    <span class="text">Dashboard</span>
+                </div>
+
+                <div class="boxes">
+                    <div class="box box1">
+                        <i class="uil uil-home"></i>
+                        <span class="text">Department</span>
+                        <span class="number" id="checkboxValue"></span>
+                    </div>
+                    <div class="box box2">
+                        <i class="uil uil-books"></i>
+                        <span class="text">Semester</span>
+                        <span class="number" id="dropdown1Value"></span>
+                    </div>
+                    <div class="box box3">
+                        <i class="uil uil-bag"></i>
+                        <span class="text">Course</span>
+                        <span class="number" id="dropdown2Value"></span>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity">
+                <div class="title">
+                    <i class="uil uil-clock-three"></i>
+                    <span class="text">Question Bank</span>
+                </div>
+
+                <div class="activity-data">
+                    <div class="data names">
+                        <span class="data-title">QUESTION</span>
+                      
+                        <span class="data-list">abcd</span>
+                        <span class="data-list">abcd</span>
+                        <span class="data-list">abcd</span>
+                        <span class="data-list">abcd</span>
+                        <span class="data-list">abcd</span>
+                        <span class="data-list">abcd</span>
+                    </div>
+                    <div class="data email">
+                        <span class="data-title">MODULE / SECTION</span>
+                        <span class="data-list">Module 1</span>
+                        <span class="data-list">Module 2</span>
+                        <span class="data-list">Module 5</span>
+                        <span class="data-list">Module 2</span>
+                        <span class="data-list">Module 1</span>
+                        <span class="data-list">Module 3</span>
+                        
+                    </div>
+                    <div class="data joined">
+                        <span class="data-title">TAXONOMY LEVEL</span>
+                        <span class="data-list">Understand</span>
+                        <span class="data-list">Apply</span>
+                        <span class="data-list">Understand</span>
+                        <span class="data-list">Apply</span>
+                        <span class="data-list">Understand</span>
+                        <span class="data-list">Apply</span>
+                    </div>
+                    <div class="data type">
+                        <span class="data-title">DIFFICULTY LEVEL</span>
+                        <span class="data-list">Easy</span>
+                        <span class="data-list">Medium</span>
+                        <span class="data-list">Difficult</span>
+                        <span class="data-list">Easy</span>
+                        <span class="data-list">Medium</span>
+                        <span class="data-list">Difficult</span>
+                       
+                    </div>
+                    <div class="data status">
+                        <span class="data-title">COURSE OUTCOME</span>
+                        <span class="data-list">CO1</span>
+                        <span class="data-list">CO3</span>
+                        <span class="data-list">CO1</span>
+                        <span class="data-list">CO5</span>
+                        <span class="data-list">CO2</span>
+                        <span class="data-list">CO3</span>
+                     
+                    </div>
+
+
+
+                    <div class="table-data__tool">
+                        <div class="table-data__tool-left">
+                          <button class="fil">
+                            <span>
+                              <i class="fa-solid fa-grip-vertical fa-lg" style="color: #0bd022;"></i>
+                            </span> Filter
+                          </button>
+                          <button class="button-37" role="button">
+                            <span>
+                              <i class="fa-regular fa-plus"></i>
+                            </span> Add Question
+                          </button>
+                        </div>
+                        <div style="display: flex; justify-content: flex-end;">
+                          <div class="table-data__tool-right">
+                            <button class="bu" title="Export">Export <span style="padding-left: 8px;"><i class="fa fa-download"></i></span></button>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        // Get the selected options from the query parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        const checkboxValue = urlParams.get('checkbox');
+        const dropdown1Value = urlParams.get('dropdown1');
+        const dropdown2Value = urlParams.get('dropdown2');
+
+        // Update the content of the resultDiv
+        document.getElementById('checkboxValue').innerText = checkboxValue;
+        document.getElementById('dropdown1Value').innerText = dropdown1Value;
+        document.getElementById('dropdown2Value').innerText = dropdown2Value;
+    </script>
+    
+
+    <script src="script.js"></script>
+
+
+
+    
+</body>
+</html>
