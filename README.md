@@ -1,2 +1,2 @@
 # MINI_PROJECT
-Automatic Question paper  Genrater 
+Automatated Question paper  Genrater 
