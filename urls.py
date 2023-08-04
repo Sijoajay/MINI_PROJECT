@@ -1,23 +1,24 @@
-"""miniproj URL Configuration
-
-The `urlpatterns` list routes URLs to views. For more information please see:
-    https://docs.djangoproject.com/en/4.1/topics/http/urls/
-Examples:
-Function views
-    1. Add an import:  from my_app import views
-    2. Add a URL to urlpatterns:  path('', views.home, name='home')
-Class-based views
-    1. Add an import:  from other_app.views import Home
-    2. Add a URL to urlpatterns:  path('', Home.as_view(), name='home')
-Including another URLconf
-    1. Import the include() function: from django.urls import include, path
-    2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
-"""
 from django.contrib import admin
-from django.urls import path
-from app1 import views
+from django.urls import path,include
+from . import views
 
 urlpatterns = [
-    #path('admin/', admin.site.urls),
-    path('login/', views.login_view, name='login'),
+    path('',views.home,name='home'),
+    path('signup',views.signup,name='signup'),
+    path('signinfac',views.signinfac,name='signinfac'),
+    path('signout',views.signout,name='signout'),
+    path('updatecontent',views.update_content,name='updatecontent'),
+    path('dashboard/',views.dashboard,name='dashboard'),
+    path('question',views.data_view,name='question'),
+    path('add_questions', views.add_questions,name ='add_questions'),
+    path('profile',views.profile,name='profile'),
+    path('coe',views.coe,name='coe'),
+    path('assign',views.assign,name='assign'),
+    path('cate',views.cate,name='assign'),
+    path('quesgen',views.quesgen,name="quesgen"),
+    path('finalsubmission',views.edit_question_view,name='finalsubmission'),
+    path('qbank', views.qbank,name ='qbank'),
+    path('notification',views.notif,name="notification"),
+    path('adsignin',views.adsignin,name='adsignin'),
+    path('export',views.export,name='export')
 ]

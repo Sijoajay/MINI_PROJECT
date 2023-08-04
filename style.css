@@ -1,3 +1,4 @@
+ 
 *,
 *:before,
 *:after {
@@ -8,7 +9,7 @@
 
 body {
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    background: #ffffff;
+    background: #f9f9f9;
 }
 
 input,
@@ -25,17 +26,6 @@ button {
     text-align: center;
 }
 
-.cont {
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    width: 900px;
-    height: 550px;
-    margin: 0 auto 100px;
-    background: #fff;
-    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
-}
-
 .form {
     position: relative;
     width: 640px;
@@ -45,6 +35,16 @@ button {
     transition: transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
     padding: 50px 30px 0;
+}
+.cont {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+    height: 490px;
+    margin: 0 auto 10px;
+    background: #fff;
+    box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.3), 10px 10px 15px rgba(70, 70, 70, 0.15), inset -10px -10px 15px rgba(255, 255, 255, 0.3), inset 10px 10px 15px rgba(70, 70, 70, 0.15);
 }
 
 .sub-cont {
@@ -56,7 +56,7 @@ button {
     height: 100%;
     padding-left: 260px;
     background: #fff;
-    -webkit-transition: -webkit-transform 1.2s ease-in-out;
+   -webkit-transition: -webkit-transform 1.2s ease-in-out;
     transition: -webkit-transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out;
     transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
@@ -111,7 +111,9 @@ button {
     top: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    background-image: url("bg.jpg");
+    background: linear-gradient(to right, #1a7cad, #13c7e7); 
+    
 }
 
 .cont.s--signup .img:before {
@@ -137,6 +139,7 @@ button {
 .img__text h2 {
     margin-bottom: 10px;
     font-weight: normal;
+    
 }
 
 .img__text p {
@@ -181,7 +184,7 @@ button {
     top: 0;
     width: 100%;
     height: 100%;
-    border: 2px solid #fff;
+    border: 2px solid #ffffff;
     border-radius: 30px;
 }
 
@@ -219,9 +222,11 @@ button {
 }
 
 h2 {
-    width: 100%;
-    font-size: 28px;
+   
+    font-size: 38px;
     text-align: center;
+    text-shadow: 2px 4px 4px rgba(0, 0, 0, 0.5);
+    color:  #052b9c;
 }
 
 label {
@@ -229,23 +234,30 @@ label {
     width: 260px;
     margin: 25px auto 0;
     text-align: center;
+    display: block;
+    margin-top: 30px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 label span {
     font-size: 12px;
-    color: #cfcfcf;
+    color: #000000d7;
     text-transform: uppercase;
 }
 
 input {
     display: block;
+    height: 40px;
     width: 100%;
-    margin-top: 5px;
-    padding-bottom: 5px;
-    font-size: 16px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    text-align: center;
+    background-color: rgba(77, 77, 77, 0.091);
+    border-radius: 40px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: 300;
 }
+
 
 .forgot-pass {
     margin-top: 15px;
@@ -257,33 +269,18 @@ input {
 .submit {
     margin-top: 40px;
     margin-bottom: 20px;
-    background: #f3c17b;
+    background: linear-gradient(to left, #1a7cad, #13c7e7); 
     text-transform: uppercase;
+    font-weight: 100;
 }
-.submit:active {
-    transform: scale(0.98);
-    /* Scaling button to 0.98 to its original size */
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    
-}
-.submit::before{
-    bottom : 0 ;
-    right : 54px ;
-    width : calc( 100% - 56px * 2 - 16px ) ;
-}
-.submit::after{
-    bottom : 0 ;
-    left : 54px ;
-    width : 9px ;
-}
-/* .submit:focus {
-    box-shadow: #f7ac0b 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #cfab0ae0 0 -3px 0 inset;
+.submit:focus {
+    box-shadow: #0bc8f7 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #0acfc5e0 0 -3px 0 inset;
   }
   
   .submit:hover {
-    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #bda107c4 0 -3px 0 inset;
+    box-shadow: rgba(15, 12, 21, 0.4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #0c4e9ac4 0 -3px 0 inset;
     transform: translateY(-2px);
-  } */
+  }
 .fb-btn {
     border: 2px solid #d3dae9;
     color: #8fa1c7;
@@ -315,5 +312,4 @@ input {
 
 .cont.s--signup .sign-up {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-}
+    transform: translate3d(0, 0, 0);}
